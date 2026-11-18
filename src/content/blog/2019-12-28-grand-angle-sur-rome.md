@@ -1,8 +1,8 @@
 ---
 title: "Grand Angle sur Rome"
-description: "Travel story from La Metisse"
 pubDate: 2019-12-28T00:00:00
-tags: ["Voyages", "Travel"]
+category: "Voyages"
+excerpt: "Rome sans vous assommer: des photos, des astuces, zéro baratin touristique."
 ---
 
 28 décembre 2019

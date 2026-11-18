@@ -1,8 +1,8 @@
 ---
 title: "Le Paris des Artistes"
-description: "Travel story from La Metisse"
 pubDate: 2018-06-12T00:00:00
-tags: ["Découvertes", "Travel"]
+category: "Découvertes"
+excerpt: "Les vrais artistes parisiens existent, et j'en ai rencontré quelques-uns sacrément doués."
 ---
 
 12 juin 2018

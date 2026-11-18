@@ -1,8 +1,8 @@
 ---
 title: "Rick, Tattoo-moi s'il te plaît!"
-description: "Travel story from La Metisse"
 pubDate: 2020-10-07T00:00:00
-tags: ["Rencontres", "Travel"]
+category: "Rencontres"
+excerpt: "Ricardo le tatoueur: d'autodidacte à artiste mondial, avec sarcasmes et passion à revendre."
 ---
 
 7 octobre 2020

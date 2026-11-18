@@ -1,8 +1,8 @@
 ---
 title: "Sea, Surf and Sun – RIKF 2018"
-description: "Travel story from La Metisse"
 pubDate: 2018-06-27T00:00:00
-tags: ["Voyages", "Travel"]
+category: "Voyages"
+excerpt: "Rodrigues a eu du vent enfin: les kiters ont dansé, j'ai photographié, c'était dingue."
 ---
 
 27 juin 2018

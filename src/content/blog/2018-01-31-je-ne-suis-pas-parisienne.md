@@ -1,8 +1,8 @@
 ---
 title: "Je ne suis pas Parisienne"
-description: "Travel story from La Metisse"
 pubDate: 2018-01-31T00:00:00
-tags: ["Rencontres", "Travel"]
+category: "Rencontres"
+excerpt: "Montmartre m'a séduite, mais Paris ne m'a pas convertie à la parisianité."
 ---
 
 31 janvier 2018

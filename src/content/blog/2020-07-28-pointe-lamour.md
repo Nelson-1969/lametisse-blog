@@ -1,8 +1,8 @@
 ---
 title: "Adieu à Pointe l'Amour"
-description: "Travel story from La Metisse"
 pubDate: 2020-07-28T00:00:00
-tags: ["Découvertes", "Travel"]
+category: "Découvertes"
+excerpt: "Le filao de Pointe l'Amour raconte son histoire avant de disparaître à jamais."
 ---
 
 28 juillet 2020

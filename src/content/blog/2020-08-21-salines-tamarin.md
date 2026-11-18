@@ -1,8 +1,8 @@
 ---
 title: "Soeurs de Sel"
-description: "Travel story from La Metisse"
 pubDate: 2020-08-21T00:00:00
-tags: ["Rencontres", "Travel"]
+category: "Rencontres"
+excerpt: "Six saunières, une sororité de sel, et l'amère question: pourquoi pas au supermarché?"
 ---
 
 21 août 2020

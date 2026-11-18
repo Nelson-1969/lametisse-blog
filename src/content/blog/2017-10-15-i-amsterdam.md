@@ -1,8 +1,8 @@
 ---
 title: "I Amsterdam"
-description: "Travel story from La Metisse"
 pubDate: 2017-10-15T00:00:00
-tags: ["Voyages", "Travel"]
+category: "Voyages"
+excerpt: "Amsterdam, où les vélos règnent et les grenouilles gelées contemplent les tulipes."
 ---
 
 5 février 2016

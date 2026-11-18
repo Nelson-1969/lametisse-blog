@@ -1,8 +1,8 @@
 ---
 title: "Kot Jeannette – Rodrigues"
-description: "Travel story from La Metisse"
 pubDate: 2018-06-25T00:00:00
-tags: ["Voyages", "Travel"]
+category: "Voyages"
+excerpt: "Jeannette a construit un royaume culinaire à Rodrigues: famille, rhum et magie garantis."
 ---
 
 25 juin 2018
