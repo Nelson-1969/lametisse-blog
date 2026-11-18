@@ -90,9 +90,9 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<section>
-				<ul>
+				<ul id="blog-posts">
 					{posts.map((post) => (
-						<li>
+						<li data-category={post.data.category?.toLowerCase()}>
 							<a href={`/blog/${post.id}/`}>
 								{post.data.heroImage && (
 									<Image width={720} height={360} src={post.data.heroImage} alt="" />
@@ -108,5 +108,6 @@ const posts = (await getCollection('blog')).sort(
 			</section>
 		</main>
 		<Footer />
+		<script src="../scripts/filter-posts.js" is:inline></script>
 	</body>
 </html>
