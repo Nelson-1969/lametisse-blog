@@ -14,23 +14,26 @@ const sortedPosts = allPosts.sort((a, b) =>
 );
 
 // Get category from URL params
-const category = Astro.url.searchParams.get('cat');
+const categoryParam = Astro.url.searchParams.get('cat');
 
-// Helper function to normalize strings (lowercase and remove accents)
+// Helper function to normalize strings (lowercase, remove accents, and trim whitespace)
 const normalizeString = (str: string): string => {
+  if (!str) return '';
   return str
+    .trim()
     .toLowerCase()
     .normalize('NFD')
     .replace(/[\u0300-\u036f]/g, '');
 };
 
 // Filter posts by category if specified
-const filteredPosts = category && category !== 'all'
-  ? sortedPosts.filter(post => post.data.category && normalizeString(post.data.category) === normalizeString(category))
+const normalizedCategory = categoryParam ? normalizeString(categoryParam) : null;
+const filteredPosts = normalizedCategory && normalizedCategory !== ''
+  ? sortedPosts.filter(post => post.data.category && normalizeString(post.data.category) === normalizedCategory)
   : sortedPosts;
 ---
 
-<MainLayout title="Accueil" currentCategory={category || 'all'}>
+<MainLayout title="Accueil" currentCategory={categoryParam || 'all'}>
   <div class="blog-container">
     <div class="blog-grid">
       {filteredPosts.map((post) => (
