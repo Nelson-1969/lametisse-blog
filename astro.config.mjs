@@ -2,10 +2,13 @@
 
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
+import cloudflare from '@astrojs/cloudflare';
 import { defineConfig, fontProviders } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
+	output: 'hybrid',
+	adapter: cloudflare(),
 	site: 'https://example.com',
 	integrations: [mdx(), sitemap()],
 	fonts: [
