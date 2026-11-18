@@ -1,0 +1,23 @@
+backend:
+  name: github
+  repo: Nelson-1969/lametisse-blog
+  branch: main
+  auth_endpoint: api/auth
+
+media_folder: "public/images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Articles"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Publication Date", name: "pubDate", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "select", options: ["Voyages", "Rencontres", "Découvertes"] }
+      - { label: "Excerpt (French)", name: "excerpt", widget: "string", required: false }
+      - { label: "Featured Image", name: "image", widget: "image", required: false }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Content", name: "body", widget: "markdown" }
