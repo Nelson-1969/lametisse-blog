@@ -16,9 +16,17 @@ const sortedPosts = allPosts.sort((a, b) =>
 // Get category from URL params
 const category = Astro.url.searchParams.get('cat');
 
+// Helper function to normalize strings (lowercase and remove accents)
+const normalizeString = (str: string): string => {
+  return str
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '');
+};
+
 // Filter posts by category if specified
 const filteredPosts = category && category !== 'all'
-  ? sortedPosts.filter(post => post.data.category?.toLowerCase() === category.toLowerCase())
+  ? sortedPosts.filter(post => post.data.category && normalizeString(post.data.category) === normalizeString(category))
   : sortedPosts;
 ---
 
