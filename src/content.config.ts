@@ -12,6 +12,7 @@ const blog = defineCollection({
 		category: z.enum(["Voyages", "Rencontres", "Découvertes"]),
 		excerpt: z.string(),
 		description: z.string().optional(),
+		image: z.string().optional(),
 	}),
 });
 
