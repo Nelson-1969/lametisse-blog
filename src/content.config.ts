@@ -9,7 +9,7 @@ const blog = defineCollection({
 	schema: z.object({
 		title: z.string(),
 		pubDate: z.coerce.date(),
-		category: z.enum(["Voyages", "Rencontres", "Découvertes"]),
+		category: z.enum(["Voyages", "Rencontres", "Découvertes", "Labutik"]),
 		excerpt: z.string(),
 		description: z.string().optional(),
 		image: z.string().optional(),
