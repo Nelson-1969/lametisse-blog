@@ -1,0 +1,90 @@
+# CloudCannon configuration for La Metisse Astro blog
+# This file tells CloudCannon how to manage your blog content
+
+paths:
+  source: src
+  content: content
+  data: src/data
+  static: public
+
+collections_config:
+  blog:
+    path: content/blog
+    url: /blog/[slug]
+    output: true
+    icon: article
+    _enabled_editors:
+      - content
+      - visual
+    _inputs:
+      title:
+        type: text
+        label: Article Title
+        required: true
+      pubDate:
+        type: datetime
+        label: Publication Date
+        required: true
+      category:
+        type: select
+        label: Category
+        required: true
+        options:
+          values:
+            - Voyages
+            - Rencontres
+            - Découvertes
+            - Labutik
+      excerpt:
+        type: textarea
+        label: Article Summary
+        required: true
+        comment: "One-line summary that appears in blog listings"
+      content:
+        type: markdown
+        label: Article Content
+      image:
+        type: image
+        label: Featured Image
+        comment: "Main image for the article"
+
+# Image settings for media uploads
+image_extensions:
+  - jpg
+  - jpeg
+  - png
+  - gif
+  - webp
+
+# Asset settings
+_site_editor:
+  editor: visual
+
+# CloudCannon editorial workflow (optional)
+_editables:
+  content:
+    bold: true
+    italic: true
+    link: true
+    h1: false
+    h2: true
+    h3: true
+    h4: false
+    h5: false
+    h6: false
+    ul: true
+    ol: true
+    blockquote: true
+    code: true
+    hr: true
+    redo: true
+    undo: true
+    removeformat: true
+
+# Hosting
+hosting:
+  cloudflare_pages:
+    branch: main
+
+# Generator settings
+generator: astro
