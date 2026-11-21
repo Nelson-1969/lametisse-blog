@@ -7,9 +7,13 @@ import { defineConfig, fontProviders } from 'astro/config';
 // https://astro.build/config
 export default defineConfig({
 	output: 'static',
-	adapter: undefined,
 	site: 'https://example.com',
-	integrations: [mdx(), sitemap()],
+	integrations: [
+		mdx({
+			optimize: true,
+		}),
+		sitemap()
+	],
 	vite: {
 		build: {
 			assetsInlineLimit: 0,
