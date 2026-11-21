@@ -9,6 +9,14 @@ export default defineConfig({
 	output: 'static',
 	site: 'https://example.com',
 	integrations: [mdx(), sitemap()],
+	vite: {
+		build: {
+			assetsInlineLimit: 0,
+		},
+		ssr: {
+			noExternal: [],
+		},
+	},
 	fonts: [
 		{
 			provider: fontProviders.local(),
