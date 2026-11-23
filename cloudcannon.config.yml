@@ -9,7 +9,7 @@ paths:
 
 collections_config:
   blog:
-    path: src/content/blog
+    path: content/blog
     url: /blog/[slug]
     output: true
     icon: article
