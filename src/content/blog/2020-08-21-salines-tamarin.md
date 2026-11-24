@@ -11,7 +11,7 @@ excerpt: "Six saunières, une sororité de sel, et l'amère question: pourquoi p
 
 &nbsp;
 
-Cher Vagabond,
+Cher.e Vagabond.e,
 
 Il a fallu 15 ans et une pandémie pour me décider, à rendre visite aux paludiers. Quinze années durant lesquelles j’ai quotidiennement emprunté la route qui passe par le pont de Tamarin, que j’ai contourné les Salines de Yemen en face de l’église Saint-Benoît, et pas une fois je ne me suis aventurée plus loin que la petite boutique qui me fournit en sel…
 
