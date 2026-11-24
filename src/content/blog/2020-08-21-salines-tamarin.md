@@ -7,7 +7,7 @@ excerpt: "Six saunières, une sororité de sel, et l'amère question: pourquoi p
 ---
 21 août 2020
 
-*On connaît la valeur du sel quand il n’y en a plus (…) – Proverbe indien*
+***On connaît la valeur du sel quand il n’y en a plus (…) – Proverbe indien***
 
 Il a fallu 15 ans et une pandémie pour me décider, à rendre visite aux paludiers. Quinze années durant lesquelles j’ai quotidiennement emprunté la route qui passe par le pont de Tamarin, que j’ai contourné les Salines de Yemen en face de l’église Saint-Benoît, et pas une fois je ne me suis aventurée plus loin que la petite boutique qui me fournit en sel…
 

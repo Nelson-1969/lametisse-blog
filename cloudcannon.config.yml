@@ -1,18 +1,15 @@
-# CloudCannon configuration for La Metisse Astro blog
-# This file tells CloudCannon how to manage your blog content
-
 paths:
   source: src
   content: content
   data: src/data
   static: public
-
 collections_config:
   blog:
     path: /src/content/blog
-    url: /blog/[slug]
-    output: true
     icon: article
+    url: /blog/[slug]
+    disable_url: false
+    include_developer_files: false
     _enabled_editors:
       - content
       - visual
@@ -20,47 +17,81 @@ collections_config:
       title:
         type: text
         label: Article Title
+        cascade: true
         required: true
       pubDate:
         type: datetime
         label: Publication Date
+        cascade: true
         required: true
       category:
         type: select
-        label: Category
-        required: true
         options:
+          allow_empty: true
           values:
             - Voyages
             - Rencontres
             - Découvertes
             - Labutik
+          required: false
+        label: Category
+        cascade: true
+        required: true
       excerpt:
         type: textarea
         label: Article Summary
+        comment: One-line summary that appears in blog listings
+        cascade: true
         required: true
-        comment: "One-line summary that appears in blog listings"
       content:
         type: markdown
         label: Article Content
+        cascade: true
       image:
         type: image
+        options:
+          paths:
+          allowed_sources:
+          disable_upload_file: false
+          disable_direct_input: false
+          disable_upload_file_in_file_browser: false
+          mime_type:
+          accepts_mime_types:
+          resize_style: contain
+          width:
+          height:
+          expandable: false
+          prevent_resize_existing_files: false
+          sizes:
+          max_file_size:
+          max_file_size_message:
+          required: false
+          required_message:
+          min_length:
+          min_length_message:
+          max_length:
+          max_length_message:
+          min_graphemes:
+          min_graphemes_message:
+          max_graphemes:
+          max_graphemes_message:
+          min_words:
+          min_words_message:
+          max_words:
+          max_words_message:
+          locale:
+          pattern:
+          pattern_message:
+          empty_type:
         label: Featured Image
-        comment: "Main image for the article"
+        comment: |-
+          Main image for the article
 
-# Image settings for media uploads
-image_extensions:
-  - jpg
-  - jpeg
-  - png
-  - gif
-  - webp
-
-# Asset settings
-_site_editor:
-  editor: visual
-
-# CloudCannon editorial workflow (optional)
+          ![](/uploads/img-8970.jpeg)
+        cascade: true
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
 _editables:
   content:
     bold: true
@@ -80,11 +111,16 @@ _editables:
     redo: true
     undo: true
     removeformat: true
-
-# Hosting
+timezone: Etc/UTC
+image_extensions:
+  - jpg
+  - jpeg
+  - png
+  - gif
+  - webp
+_site_editor:
+  editor: visual
 hosting:
   cloudflare_pages:
     branch: main
-
-# Generator settings
 generator: astro
