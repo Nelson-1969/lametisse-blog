@@ -9,6 +9,10 @@ excerpt: "Six saunières, une sororité de sel, et l'amère question: pourquoi p
 
 ***On connaît la valeur du sel quand il n’y en a plus (…) – Proverbe indien***
 
+&nbsp;
+
+Cher Vagabond,
+
 Il a fallu 15 ans et une pandémie pour me décider, à rendre visite aux paludiers. Quinze années durant lesquelles j’ai quotidiennement emprunté la route qui passe par le pont de Tamarin, que j’ai contourné les Salines de Yemen en face de l’église Saint-Benoît, et pas une fois je ne me suis aventurée plus loin que la petite boutique qui me fournit en sel…
 
 Le 29 juillet, avant même que le soleil ne se lève, j’ai mis la machine en marche pour un mini-reportage.
