@@ -2,22 +2,25 @@ backend:
   name: github
   repo: Nelson-1969/lametisse-blog
   branch: main
-  auth_endpoint: api/auth
 
-media_folder: "public/images/blog"
-public_folder: "/images/blog"
+auth_type: implicit
+app_id: github-app-id
+
+site_url: https://fantastic-cave.cloudvent.net
+media_folder: public/images
+public_folder: /images
 
 collections:
-  - name: "blog"
-    label: "Articles"
-    folder: "src/content/blog"
+  - name: blog
+    label: Blog Articles
+    folder: src/content/blog
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publication Date", name: "pubDate", widget: "datetime" }
-      - { label: "Category", name: "category", widget: "select", options: ["Voyages", "Rencontres", "Découvertes"] }
-      - { label: "Excerpt (French)", name: "excerpt", widget: "string", required: false }
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Publication Date", name: "pubDate", widget: "datetime", format: "YYYY-MM-DD", required: true }
+      - { label: "Category", name: "category", widget: "select", options: ["Voyages", "Rencontres", "Découvertes", "Labutik"], required: true }
+      - { label: "Article Summary", name: "excerpt", widget: "text", required: true }
       - { label: "Featured Image", name: "image", widget: "image", required: false }
-      - { label: "Description", name: "description", widget: "text", required: false }
-      - { label: "Content", name: "body", widget: "markdown" }
+      - { label: "Article Content", name: "body", widget: "markdown", required: true }
+      - { label: "Description (SEO)", name: "description", widget: "text", required: false }
