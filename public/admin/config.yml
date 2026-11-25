@@ -3,9 +3,6 @@ backend:
   repo: Nelson-1969/lametisse-blog
   branch: main
 
-auth_type: implicit
-app_id: github-app-id
-
 site_url: https://fantastic-cave.cloudvent.net
 media_folder: public/images
 public_folder: /images
